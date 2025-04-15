@@ -60,14 +60,21 @@ const Home = () => {
   };
 
   return (
-    <div className="relative flex items-center justify-center min-h-screen" id="home">
+    <div
+      className="relative flex items-center justify-center min-h-screen"
+      id="home"
+    >
       <div className="absolute inset-0 bg-black/60"></div>
       <div className="relative z-20 flex flex-col md:flex-row items-center w-11/12 lg:w-10/12 space-y-8 md:space-y-0 md:space-x-10 py-20">
         <div className="w-full md:w-1/2 flex flex-col items-start space-y-6">
           <div className="space-y-2">
-            <h2 className="text-red-500 text-xl font-medium motion-preset-confetti motion-duration-2000">Hello, I'm</h2>
-            <h1 className="text-5xl md:text-6xl font-bold text-white motion-preset-blink motion-duration-1500 
-">
+            <h2 className="text-red-500 text-xl font-medium motion-preset-confetti motion-duration-2000">
+              Hello, I'm
+            </h2>
+            <h1
+              className="text-5xl md:text-6xl font-bold text-white motion-preset-blink motion-duration-1500 
+"
+            >
               Sabari
             </h1>
           </div>
@@ -84,20 +91,19 @@ const Home = () => {
 
           <div className="flex space-x-4 pt-4">
             <button
-              onClick={handleHireMeClick} 
+              onClick={handleHireMeClick}
               className="px-8 py-3 bg-red-500 text-white rounded-full hover:bg-red-600 transition-all duration-300 transform hover:scale-105"
             >
               Hire Me
             </button>
             <a
-  href={resume}
-  download
-  className="px-8 py-3 border-2 border-red-500 text-red-500 rounded-full hover:bg-red-500 hover:text-white transition-all duration-300 transform hover:scale-105 "
->
-  Download CV
-</a>
-
-
+              href="https://drive.google.com/drive/folders/13pOjbimk5nolnpRPVNRoST7TPaacaiUD?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3 border-2 border-red-500 text-red-500 rounded-full hover:bg-red-500 hover:text-white transition-all duration-300 transform hover:scale-105 "
+            >
+              Download CV
+            </a>
           </div>
         </div>
 
@@ -129,7 +135,8 @@ const Home = () => {
         }
 
         @keyframes glow {
-          0%, 100% {
+          0%,
+          100% {
             box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.4);
           }
           50% {
@@ -138,7 +145,8 @@ const Home = () => {
         }
 
         @keyframes float {
-          0%, 100% {
+          0%,
+          100% {
             transform: translateY(0);
           }
           50% {
@@ -147,7 +155,8 @@ const Home = () => {
         }
 
         @keyframes shadow-pulse {
-          0%, 100% {
+          0%,
+          100% {
             box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.4);
           }
           50% {
@@ -173,7 +182,8 @@ const Home = () => {
         }
 
         @keyframes blink {
-          0%, 100% {
+          0%,
+          100% {
             opacity: 1;
           }
           50% {

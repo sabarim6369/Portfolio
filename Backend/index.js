@@ -20,9 +20,21 @@ var sender = nodemailer.createTransport({
   var composeMail = {
     from: email,
     to: "sabarim6369@gmail.com",
-    subject: `New Message from ${name}: ${subject} whose email is ${email}`,
-text:message 
- };
+    subject: `New Message from ${name}: ${subject}`,
+    html: `
+      <div style="font-family: Arial, sans-serif; padding: 20px; border: 1px solid #ddd; border-radius: 10px;">
+        <h2 style="color: #333;">New Contact Form Submission</h2>
+        <p><strong>From:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Subject:</strong> ${subject}</p>
+        <p><strong>Message:</strong></p>
+        <div style="background-color: #f9f9f9; padding: 10px; border-radius: 5px; border-left: 4px solid #007bff;">
+          <p>${message.replace(/\n/g, "<br>")}</p>
+        </div>
+      </div>
+    `
+  };
+  
   
  sender.sendMail(composeMail, (error, info) => {
   if (error) {

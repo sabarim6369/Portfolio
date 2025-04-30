@@ -79,7 +79,7 @@ const Home = () => {
             </h1>
           </div>
 
-          <div className="h-[50px] text-2xl md:text-3xl font-semibold text-gray-300">
+          <div className="h-[50px] text-2xl md:text-3xl font-semibold text-gray-300 hidden sm:block">
             <TypewriterText texts={roles} />
           </div>
 

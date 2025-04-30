@@ -38,7 +38,7 @@ const Navbar = () => {
               .
             </span>
           </span>
-          <span className="motion-preset-spin motion-duration-75 text-3xl mt-1">
+          <span className="motion-preset-spin motion-duration-75 text-3xl mt-1 ">
             ⭐
           </span>
         </div>

@@ -26,7 +26,7 @@ var sender = nodemailer.createTransport({
         <h2 style="color: #333;">New Contact Form Submission</h2>
         <p><strong>From:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Subject:</strong> ${subject}</p>
+      
         <p><strong>Message:</strong></p>
         <div style="background-color: #f9f9f9; padding: 10px; border-radius: 5px; border-left: 4px solid #007bff;">
           <p>${message.replace(/\n/g, "<br>")}</p>

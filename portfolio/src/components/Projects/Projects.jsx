@@ -26,7 +26,7 @@ const Projects = () => {
         "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       technologies: ["React", "MongoDB", "Express", "Node.js"],
       github: "https://github.com/vijayguhan10/Leadmanagement.git",
-      live: "#",
+      live: "https://aws-leadmanagementsystem.vercel.app",
       client: "Lead Management",
     },
     {
@@ -90,6 +90,7 @@ const Projects = () => {
       github: 'https://github.com/sabarim6369/odform_reactnative.git',
       live: '#'
     },
+    
     // {
     //   title: 'Wellness 360 - Disease Detection and Diet Plans',
     //   description: 'A health platform that detects diseases and provides personalized diet plans using machine learning.',
@@ -148,7 +149,7 @@ const Projects = () => {
         <div className="w-24 h-1 bg-red-500 mx-auto mb-8"></div>
 
         <div className="flex justify-center mb-12">
-          <div className="bg-gray-800 rounded-full p-1">
+          <div className="bg-gray-800 rounded-full p-1 ">
             <button
               onClick={() => setActiveTab("freelance")}
               className={`px-6 py-2 rounded-full transition-all duration-300 ${

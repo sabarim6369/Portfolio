@@ -43,7 +43,7 @@ const About = () => {
         {
           icon: <Database className="w-8 h-8 text-yellow-500" />,
           name: 'Backend',
-          skills: ['Node.js', 'Express', 'REST APIs','Graphql','Nestjs(basic level)']
+          skills: ['Node.js', 'Express', 'Java-Springboot','REST APIs','Graphql','Nestjs(basic level)']
         },
         {
           icon: <Database className="w-8 h-8 text-yellow-500" />,

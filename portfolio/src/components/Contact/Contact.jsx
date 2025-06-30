@@ -10,7 +10,7 @@ const Contact = () => {
     name: '',
     email: '',
     subject: '',
-    message: ''
+      message: ''
   });
   const [loading, setLoading] = useState(false);  
   const { ref: headingRef, inView: headingInView } = useInView({ triggerOnce: false, threshold: 0.3 });

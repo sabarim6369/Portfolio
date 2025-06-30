@@ -8,13 +8,13 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.post('/contact', (req, res) => {
-  const { name, email, subject, message } = req.body;
+  const { name, email, subject, message="" } = req.body;
 console.log(req.body)
 var sender = nodemailer.createTransport({
     service: "gmail",
     auth: {
       user: "sabarim6369@gmail.com",
-      pass: "uieq qvys aybv ldot",
+      pass: "qkzo leos hcbn wwmh",
     },
   });
   var composeMail = {
@@ -38,6 +38,7 @@ var sender = nodemailer.createTransport({
   
  sender.sendMail(composeMail, (error, info) => {
   if (error) {
+    
     return res.status(500).json({ success: false, message: 'Something went wrong.' });
   }
   res.status(200).json({ success: true, message: 'Message sent successfully!' });
